@@ -1,0 +1,352 @@
+<html lang="zh-CN">
+<head> 
+    <meta charset="utf-8">
+
+  <meta name="viewport" content="initial-scale=0.9, maximum-scale=1.0, minimum-scale=0.9, user-scalable=0, width=device-width">
+    
+
+    <meta itemprop="name" content="易之喵">
+
+ 
+<meta itemprop="image" content="https://yonggangougoubupakunnan0.coding.net/p/tuchuang001/d/tc1/git/raw/master/2021-11-19/avatar1.png" />
+<meta name="description" itemprop="description" content="一个懒人的主页" />
+ 
+
+   
+	<meta name="keywords" content="易的个人主页">
+	
+	<meta name="description" content=""个人引导页"">
+    <title>
+易的个人主页      
+    </title>
+ 
+    <meta property="og:type" content="website">
+
+    <meta property="og:url" content="易的个人主页 ">
+
+    <meta property="og:image" content="https://yonggangougoubupakunnan0.coding.net/p/tuchuang001/d/tc1/git/raw/master/2021-11-19/avatar1.png">
+
+    <meta property="og:title" content="易的个人主页">
+
+    <meta property="og:description" content=易">
+
+    <link rel="canonical" href="易的个人主页">
+
+    <link rel="shortcut icon" href="https://yonggangougoubupakunnan0.coding.net/p/tuchuang001/d/tc1/git/raw/master/2021-11-19/avatar1.png">
+
+    <link rel="bookmark" href="https://yonggangougoubupakunnan0.coding.net/p/tuchuang001/d/tc1/git/raw/master/2021-11-19/avatar1.png">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://yonggangougoubupakunnan0.coding.net/p/tuchuang001/d/tc1/git/raw/master/2021-11-19/avatar1.png">
+    <link rel="stylesheet" href="./style.css" media="screen" type="text/css">
+    <script src="./script.js" type="text/javascript"></script>
+    
+    
+    
+    
+    
+    
+    
+ <!-----------------------------------------测试-------------------------------------------------->
+ 
+
+
+
+<script>
+	jQuery(document).ready(function() {
+	var QRBox	=	$('#QRBox');
+	var MainBox	=	$('#MainBox');
+	var AliPayQR	=	'/img/zfb.jpg';
+	var WeChanQR	=	'/img/wx.png';
+	var QQQR     	=	"/img/qq.jpg";
+
+	
+
+	function showQR(QR) {
+		if (QR) {
+			MainBox.css('background-image','url('+QR+')');
+		}
+		$('#DonateText,#donateBox,#github').addClass('blur');
+		QRBox.fadeIn(300,function(argument) {
+			MainBox.addClass('showQR');
+		});
+	}
+
+	$('#donateBox>li').click(function(event) {
+		var thisID	=	$(this).attr('id');
+	if (thisID === 'AliPay') {
+			showQR(AliPayQR);
+		} else if (thisID === 'WeChat') {
+			showQR(WeChanQR);
+		} else if (thisID === 'QQ') {
+			showQR(QQQR);
+		
+		}
+	});
+
+	MainBox.click(function(event) {
+		MainBox.removeClass('showQR').addClass('hideQR');
+		setTimeout (function(a) {
+			QRBox.fadeOut(300,function(argument) {
+				MainBox.removeClass('hideQR');
+			});
+			$('#DonateText,#donateBox,#github').removeClass('blur');
+		},600);
+
+	});
+});
+</script>
+ <!-----------------------------------------放入统计-------------------------------------------------->
+
+   <style>
+        .zuobiao i {
+            line-height: 1.8;
+            margin-right: 6px;
+            vertical-align: middle;
+            background-image: url(./zuobiao.svg);
+            background-size: 100%;
+            width: 16px;
+            height: 16px;
+            display: inline-block;
+            margin-top: -2px;
+        }
+       
+    </style>
+    <style>
+     .user-warp img {
+            width:70px;
+            border-radius:100%;
+           }
+	    
+/*.dark-theme .user-warp img {
+            width:70px;
+            border-radius:100%;
+            animation: light 5s ease-in-out infinite;
+            transition: 0.5s;}*/
+
+
+	
+	    @keyframes light {
+ 0%{box-shadow: 0 0 4px #f00;}
+ 25%{box-shadow: 0 0 5px #0f0;} 
+ 50%{box-shadow: 0 0 4px #00f;}
+ 75%{box-shadow: 0 0 5px #0f0;} 
+ 100%{box-shadow: 0 0 4px #f00;}
+}
+      </style>
+
+</head>
+
+<body>
+	 
+<div class="wrapper">
+<header>
+    <nav class="navbar" id="mobile-toggle-theme">
+        <div class="container"></div>
+    </nav>
+
+    <!------------------------------------------------------------------------------------------->
+    
+     
+</header> 
+
+    <div class="main">
+
+        <div class="container">
+            <div class="intro" style=" line-height: 50px">
+                <div class="user-warp img"><img src="https://yonggangougoubupakunnan0.coding.net/p/tuchuang001/d/tc1/git/raw/master/2021-11-04/Yoona_GIFs-256px-1.gif" alt="易之喵"></div>
+                <div class="nickname">易</div>
+                <div class="description">
+                    <p>“不能破吾之，必使吾益强”</p>
+
+                </div>
+
+
+                <div class="zuobiao">
+                    <i class="ico_map"></i>太阳系 · 第三颗恒星
+                    <span style="margin-left: 30px">
+                            <input id="switch_default" type="checkbox" class="switch_default">
+                            <label for="switch_default" class="toggleBtn"></label></span>
+                </div>
+
+
+                
+                <div class="menu navbar-right links">
+
+                    <!-- 获取页面列表 -->
+
+                    <a class="menu-item" href="http://链接">
+                    首页</a> · 
+
+                       <a href="http://链接">
+
+                      博客                       
+                    </a> · 
+                  
+
+                    <a href="http://链接">
+
+                      分发                        
+                    </a> · 
+                    <a href="http://链接">
+
+                      互联                        
+                    </a> · 
+
+
+                    
+                    <a class="menu-item" href="http://wpa.qq.com/msgrd?v=3&uin=你的QQ&site=qq&menu=yes">
+                    QQ                        
+                    </a>
+                    
+                    
+                    
+                    
+
+<center>
+
+<div id="header">
+</div>
+<div id="main">
+	<div class="demo">
+		
+		
+		
+        <div id="player3" class="aplayer">
+            <pre class="aplayer-lrc-content">
+                [00:00.00]
+[00:00.08]
+            </pre>
+        </div>
+	</div>
+</div>
+<script>
+	var ap3 = new APlayer({
+		element: document.getElementById('player3'),//样式1
+		narrow: false,
+		autoplay: true,
+		showlrc: false,
+		music: {
+			title: '热爱150℃的你',
+			author: '易',
+			url: 'https://yonggangougoubupakunnan0.coding.net/p/mbsblog/d/za123/git/raw/master/ra150.mp3<',
+			pic: 'tm.png'
+		}
+	});
+	ap3.init();
+</script>
+
+	</center>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+ 
+ 
+ 
+ 
+ 
+    <!------------------------------------------------------------------------------------------->
+    
+   
+
+
+
+
+
+	<!------------------------------------------------------------------------------------------->
+                </div>
+	           <div style=" line-height: 20px;font-size: 9pt;">
+                    <p>"长风破浪会有时，直挂云帆济沧海。"</p>
+                        <p style="margin-left: 8rem;font-size: 8pt;"><small>—— 李白 · 行路难</small></p>
+			
+			
+                </div>
+                
+        <br>
+                 <center>
+	<ul id="donateBox" class="list pos-f tr3">
+		<li id="AliPay">AliPay</li>
+		<li id="WeChat">WeChat</li>
+		<li id="QQ">QQ</li>
+		
+	</ul>
+	<div id="QRBox" class="pos-f left-100">
+		<div id="MainBox"></div>
+	</div>
+</center>
+
+                
+            </div>
+            
+            
+        </div>
+
+</div>
+
+<footer id="footer" class="footer">
+         	
+		 <div class="stars">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+    </div>
+    
+    	<!------------------------------------------------------------------------------------------->
+		
+<li class="list-group-item"><a href="http://beian.miit.gov.cn/" target="_blank">萌ICP备2021017805号-1</a></li>	
+</body>
+
+</html>
